@@ -1,7 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* =============================
+   FONDO GENERAL
+================================*/
 body {
   background: linear-gradient(to top, #fdf3f3 0%, #724060 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* =============================
+   CONTENEDOR PRINCIPAL
+================================*/
 .main-container {
   max-width: 900px;
   width: 90%;
@@ -10,10 +24,14 @@ body {
   background: linear-gradient(to top, #f8e7e7 0%, #fdf3f3 100%);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
+
+/* =============================
+   TIPOGRAFÍA
+================================*/
 .h1 {
   font-family: "Limelight", serif;
   font-size: 3.2rem;
@@ -44,50 +62,139 @@ h3 {
 
 h4 {
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  color: #724060; /* fourth-color */
+  font-size: 1.9rem;
+  color: #724060;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.step-by-step-container {
-  border: 0.5px solid #fdf3f3;
-  border-radius: 12px;
-  background-color: #fdf3f3;
-  max-width: 700px;
-  margin: 20px auto; /* Centra horizontalmente dentro del main */
+
+/* =============================
+   GRID DE TARJETAS
+================================*/
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 98%;
+  max-width: 900px;
+  margin: 15px auto;
+}
+
+/* =============================
+   CONTENEDOR TARJETA PRINCIPAL
+================================*/
+.flip-card {
+  width: 100%;
+  perspective: 1000px; /* Efecto 3D */
+}
+
+/* =============================
+   CAPA INTERNA QUE GIRA
+================================*/
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Mantiene altura perfecta */
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+
+/* =============================
+   EFECTO DE VOLTEO
+================================*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* =============================
+   CARA FRONTAL Y TRASERA
+================================*/
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(114, 64, 96, 0.3);
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.accordion-header {
-  padding: 16px;
-}
-
-.accordion-header h5 {
   font-family: "Playfair Display", serif;
-  margin: 0;
-  font-size: 1.2rem;
+}
+
+/* Frente */
+.flip-card-front {
+  background-color: #fdf3f3;
+  border: 1px solid #f4dce6;
+}
+
+.flip-card-front h5 {
+  font-size: 1.15rem;
   color: #724060;
+  margin: 0;
 }
 
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 16px;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+/* Parte trasera */
+.flip-card-back {
+  background-color: #f8e7ef;
+  transform: rotateY(180deg);
 }
 
-.accordion-content p {
-  font-family: "Playfair Display", serif;
-  margin: 16px 0;
-  font-size: 1rem;
+.flip-card-back h5 {
+  color: #724060;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.flip-card-back p {
   color: #a070a1;
-  line-height: 1.5;
+  text-align: center;
 }
 
-/* Clase activa para desplegar */
-.step-by-step-container.active .accordion-content {
-  max-height: 500px; /* Ajusta según tu contenido */
-  padding: 16px;
+/* =============================
+   FOOTER
+================================*/
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  color: rgba(114, 64, 96, 0.4); /* fourth-color con transparencia */
+}
+
+footer a {
+  color: rgba(
+    114,
+    64,
+    96,
+    0.5
+  ); /* un poco más visible que el resto del texto */
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+/* =============================
+   RESPONSIVE
+================================*/
+@media (max-width: 700px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
 }
