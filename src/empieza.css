@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(to top, #fdf3f3 0%, #724060 100%);
+}
+
+.main-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to top, #f8e7e7 0%, #fdf3f3 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.h1 {
+  font-family: "Limelight", serif;
+  font-size: 3.2rem;
+  color: #724060;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  color: #a070a1;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  color: #a070a1;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  max-width: 680px;
+  line-height: 1.55;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #724060; /* fourth-color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.step-by-step-container {
+  border: 0.5px solid #fdf3f3;
+  border-radius: 12px;
+  background-color: #fdf3f3;
+  max-width: 700px;
+  margin: 20px auto; /* Centra horizontalmente dentro del main */
+  box-shadow: 0 4px 6px rgba(114, 64, 96, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 16px;
+}
+
+.accordion-header h5 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #724060;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+  font-family: "Playfair Display", serif;
+  margin: 16px 0;
+  font-size: 1rem;
+  color: #a070a1;
+  line-height: 1.5;
+}
+
+/* Clase activa para desplegar */
+.step-by-step-container.active .accordion-content {
+  max-height: 500px; /* Ajusta según tu contenido */
+  padding: 16px;
+}
