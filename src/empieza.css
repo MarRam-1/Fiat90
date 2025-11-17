@@ -68,93 +68,66 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* =============================
-   GRID DE TARJETAS
-================================*/
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  width: 98%;
-  max-width: 900px;
-  margin: 15px auto;
-}
-
-/* =============================
-   CONTENEDOR TARJETA PRINCIPAL
-================================*/
-.flip-card {
-  width: 100%;
-  perspective: 1000px; /* Efecto 3D */
-}
-
-/* =============================
-   CAPA INTERNA QUE GIRA
-================================*/
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3; /* Mantiene altura perfecta */
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-  border-radius: 15px;
-}
-
-/* =============================
-   EFECTO DE VOLTEO
-================================*/
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* =============================
-   CARA FRONTAL Y TRASERA
-================================*/
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.paso-a-paso-container {
+  background: rgba(160, 112, 161, 0.15); /* third-color con transparencia */
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(114, 64, 96, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: justify;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.paso-a-paso-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del summary */
+.paso-a-paso-container summary {
   font-family: "Playfair Display", serif;
-}
-
-/* Frente */
-.flip-card-front {
-  background-color: #fdf3f3;
-  border: 1px solid #f4dce6;
-}
-
-.flip-card-front h5 {
-  font-size: 1.15rem;
-  color: #724060;
-  margin: 0;
-}
-
-/* Parte trasera */
-.flip-card-back {
-  background-color: #f8e7ef;
-  transform: rotateY(180deg);
-}
-
-.flip-card-back h5 {
-  color: #724060;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  color: #724060; /* fourth-color */
+  cursor: pointer;
   margin-bottom: 10px;
 }
-
-.flip-card-back p {
+.paso-a-paso-container h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
   color: #a070a1;
-  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
 }
 
+/* Estilo del párrafo interno */
+.paso-a-paso-container p {
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  color: #a070a1;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.paso-a-paso-container ul {
+  margin-top: 5px;
+}
+
+.paso-a-paso-container li {
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  color: #a070a1;
+  margin: 0;
+  line-height: 1.5;
+}
+.paso-a-paso-container div {
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  color: #a070a1;
+  margin: 0;
+  line-height: 1.5;
+}
 /* =============================
    FOOTER
 ================================*/
@@ -175,26 +148,4 @@ footer a {
   ); /* un poco más visible que el resto del texto */
   text-decoration: none;
   transition: color 0.25s ease;
-}
-
-/* =============================
-   RESPONSIVE
-================================*/
-@media (max-width: 700px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .h1 {
-    font-size: 2.6rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
 }
