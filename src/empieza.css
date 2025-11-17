@@ -68,6 +68,13 @@ h4 {
   margin-bottom: 20px;
 }
 
+.paso-a-paso-container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
 .paso-a-paso-container {
   background: rgba(160, 112, 161, 0.15); /* third-color con transparencia */
   padding: 20px;
