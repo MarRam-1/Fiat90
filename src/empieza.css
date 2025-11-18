@@ -74,6 +74,13 @@ h4 {
   gap: 20px;
   width: 100%;
 }
+.preguntas-frecuentes-wrapper3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
 
 .paso-a-paso-container {
   background: rgba(160, 112, 161, 0.15); /* third-color con transparencia */
