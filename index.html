@@ -18,6 +18,8 @@
     />
   </head>
   <body>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
     <div class="main-container">
       <div class="first-container">
         <img src="media/Maria1.png" alt="Maria1" id="maria1" />
@@ -210,6 +212,23 @@
       <a href="https://www.linkedin.com/in/mariana-ramirez-psicologa/"
         >Mariana Ramirez</a
       >
+      | Inspired by <a href="https://fiat-90.com/2026-2/">Fiat90.</a>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".more-info-wrap").classList.toggle("open");
+      }
+
+      // Cerrar menú si clicas fuera de él
+      document.addEventListener("click", (e) => {
+        const menu = document.querySelector(".more-info-wrap");
+        const button = document.querySelector(".menu-btn");
+
+        // Si haces clic fuera del menú y no es el botón
+        if (!menu.contains(e.target) && e.target !== button) {
+          menu.classList.remove("open");
+        }
+      });
+    </script>
   </body>
 </html>
