@@ -224,6 +224,13 @@
           menu.classList.remove("open");
         }
       });
+
+      window.addEventListener("pageshow", function (event) {
+        const menu = document.querySelector(".more-info-wrap");
+
+        // Siempre cerrar el menú al cargar o al volver con "back"
+        menu.classList.remove("open");
+      });
     </script>
   </body>
 </html>

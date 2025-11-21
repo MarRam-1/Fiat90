@@ -18,9 +18,8 @@
     />
   </head>
   <body>
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
     <div class="main-container">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
       <div class="first-container">
         <img src="media/Maria1.png" alt="Maria1" id="maria1" />
         <h1>Fiat90</h1>
@@ -62,32 +61,58 @@
           hacia una transformación.
         </div>
 
-        <div class="programa-content">
-          <img
-            src="media/programa.png"
-            alt="programa-cruz"
-            id="img-cruz-programa"
-          />
-          En Fiat90 descubrirás tres pilares que guían tu camino:
-          <ul>
-            <li>
-              <strong>Oración:</strong> momentos que acercan tu corazón a Dios.
-            </li>
-            <li>
-              <strong>Virtudes marianas:</strong> hábitos que cultivan humildad,
-              entrega y disciplina.
-            </li>
-            <li>
-              <strong>Comunidad:</strong>
-              un espacio para compartir, acompañarse y crecer en la fe.
-            </li>
-          </ul>
+        <div class="programa-grid">
+          <div class="bloques-info">
+            <h5>
+              <span class="material-symbols-outlined"> timer </span> Empezamos
+              en
+            </h5>
+            <div class="countdown-container">
+              <div class="time-unit">
+                <span id="days">00</span>
+                <p>Días</p>
+              </div>
+              <div class="time-unit">
+                <span id="hours">00</span>
+                <p>Horas</p>
+              </div>
+              <div class="time-unit">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+              </div>
+            </div>
+            <div id="finished-message" style="display: none">
+              ¡Fiat90 ya empezó!
+            </div>
+          </div>
+          <div class="programa-content">
+            <img
+              src="media/programa.png"
+              alt="programa-cruz"
+              id="img-cruz-programa"
+            />
+            En Fiat90 descubrirás tres pilares que guían tu camino:
+            <ul>
+              <li>
+                <strong>Oración:</strong> momentos que acercan tu corazón a
+                Dios.
+              </li>
+              <li>
+                <strong>Virtudes marianas:</strong> hábitos que cultivan
+                humildad, entrega y disciplina.
+              </li>
+              <li>
+                <strong>Comunidad:</strong>
+                un espacio para compartir, acompañarse y crecer en la fe.
+              </li>
+            </ul>
 
-          <em
-            >Cada mujer <strong>adapta el viaje</strong> a su situación,
-            haciendo que esta experiencia sea única, cercana y profundamente
-            transformadora.</em
-          >
+            <em
+              >Cada mujer <strong>adapta el viaje</strong> a su situación,
+              haciendo que esta experiencia sea única, cercana y profundamente
+              transformadora.</em
+            >
+          </div>
         </div>
       </div>
 
@@ -214,6 +239,7 @@
       >
       | Inspired by <a href="https://fiat-90.com/2026-2/">Fiat90.</a>
     </footer>
+    <script src="src/index.js"></script>
     <script>
       function toggleMenu() {
         document.querySelector(".more-info-wrap").classList.toggle("open");
@@ -228,6 +254,13 @@
         if (!menu.contains(e.target) && e.target !== button) {
           menu.classList.remove("open");
         }
+      });
+
+      window.addEventListener("pageshow", function (event) {
+        const menu = document.querySelector(".more-info-wrap");
+
+        // Siempre cerrar el menú al cargar o al volver con "back"
+        menu.classList.remove("open");
       });
     </script>
   </body>

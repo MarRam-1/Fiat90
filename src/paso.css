@@ -59,15 +59,15 @@ h2 {
 
 .menu-btn {
   position: fixed;
-  top: 3px;
+  top: 1px;
   right: 10px;
-  font-size: 17px;
+  font-size: 23px;
   background-color: transparent;
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
-  color: #a070a1;
+  color: #724060;
   z-index: 1100;
   display: none;
 }
@@ -307,12 +307,12 @@ footer a {
     backdrop-filter: blur(5px);
   }
   .logo {
-    width: 32px;
+    width: 35px;
     height: auto;
   }
 
   .titulo {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0;
   }
   .second-container {
@@ -325,17 +325,17 @@ footer a {
   }
 
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h5 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 10px;
   }
 
   .more-info-wrap {
     position: fixed;
-    top: 40px;
+    top: 43px;
     right: -230px;
     width: 200px;
     height: 30vh;
@@ -395,15 +395,15 @@ footer a {
   }
 
   .checklist-item {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .participa-button {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     gap: 5px;
     margin: 10px;
-    padding: 5px;
-    width: 150px;
+    padding: 8px;
+    width: 160px;
   }
 
   .participa-button .material-symbols-outlined {

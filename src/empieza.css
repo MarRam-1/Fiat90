@@ -46,15 +46,15 @@ body {
 
 .menu-btn {
   position: fixed;
-  top: 3px;
+  top: 1px;
   right: 10px;
-  font-size: 17px;
+  font-size: 23px;
   background-color: transparent;
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
-  color: #a070a1;
+  color: #724060;
   z-index: 1100;
   display: none;
 }
@@ -155,7 +155,6 @@ h4 {
 }
 
 .bloques-info h5 {
-  font-family: "Playfair Display", serif;
   font-size: 1.8rem;
   color: #724060;
   font-weight: 500;
@@ -167,7 +166,6 @@ h4 {
 .bloques-info {
   position: relative;
   width: 100%;
-  font-family: "Playfair Display", serif;
   font-size: 1.15rem;
   color: #724060;
   text-align: justify;
@@ -328,7 +326,6 @@ h5 {
   text-align: justify;
 }
 
-/* Estilo del párrafo interno */
 .disciplinas-container p,
 .disciplinas-container li,
 .disciplinas-container div {
@@ -489,12 +486,12 @@ footer a {
     backdrop-filter: blur(5px);
   }
   .logo {
-    width: 32px;
+    width: 35px;
     height: auto;
   }
 
   .titulo {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0;
   }
   .second-container {
@@ -503,17 +500,21 @@ footer a {
   }
 
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h5 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     max-width: 90%;
+  }
+
+  h5 .material-symbols-outlined {
+    font-size: 1.3rem;
   }
 
   .more-info-wrap {
     position: fixed;
-    top: 40px;
+    top: 43px;
     right: -230px;
     width: 200px;
     height: 30vh;
@@ -565,7 +566,7 @@ footer a {
 
   .bloques-info {
     padding: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .bloques-info h5 {
@@ -604,7 +605,7 @@ footer a {
   .paso-a-paso-container h5,
   .disciplinas-container summary,
   .disciplinas-container h5 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     margin-bottom: 5px;
   }
 
@@ -622,18 +623,18 @@ footer a {
   }
 
   .disciplinas-content {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .img-def {
     width: 35%;
   }
 
   .participa-button {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     gap: 5px;
     margin: 10px;
-    padding: 5px;
-    width: 150px;
+    padding: 8px;
+    width: 160px;
   }
 
   .participa-button .material-symbols-outlined {
