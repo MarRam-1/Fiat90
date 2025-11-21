@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.5;
+  background: linear-gradient(to top, #a070a1 0%, #724060 100%);
+}
+
+.main-container {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  margin: auto;
+  background: #fdf3f3;
+  height: auto;
+  width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.head-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: baseline;
+}
+
+#maria1 {
+  position: absolute;
+  height: auto;
+  opacity: 0.85;
+  z-index: 0;
+  border-radius: 15px;
+  object-fit: cover;
+  width: 300px;
+  left: -150px;
+}
+
+h1 {
+  font-family: "Limelight", serif;
+  font-size: 6.2rem;
+  text-shadow: 3px 2px 5px rgba(114, 64, 96, 0.5);
+  color: #724060;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #724060;
+  text-shadow: 3px 2px 5px rgba(114, 64, 96, 0.5);
+  margin: 20px 0px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 6;
+  text-align: center;
+}
+
+.back-button {
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #a070a1;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  width: 150px;
+  margin: auto;
+  color: #a070a1;
+  transition: all 0.25s ease-in-out;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  border-radius: 25px;
+
+  background-color: #a070a1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  color: #fdf3f3;
+}
+
+.back-button:active {
+  transform: translateY(0px);
+  color: #724060;
+  border-radius: 25px;
+  background: radial-gradient(circle at top left, #a070a1 0%, #f8e7e7 90%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.resource-button {
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #f8e7e7;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  width: 150px;
+  margin: auto;
+  color: #a070a1;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-grande {
+  width: 250px;
+}
+
+.resource-button:hover {
+  transform: scale(1.1);
+  border-radius: 25px;
+
+  background-color: #a070a1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  color: #fdf3f3;
+}
+
+.resource-button:active {
+  transform: translateY(0px);
+  color: #724060;
+  border-radius: 25px;
+  background: radial-gradient(circle at top left, #a070a1 0%, #f8e7e7 90%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.describe-container {
+  font-size: 1.5rem;
+  color: #724060;
+  font-style: italic;
+  padding: 0px 40px;
+  text-align: center;
+}
+
+.first-content {
+  font-size: 1.3rem;
+  color: #724060;
+  padding: 0px 30px;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #724060;
+  margin: 20px 0px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #724060;
+  margin: 20px 0px;
+  margin-bottom: 5px;
+}
+.lista-grid ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+  font-size: 1.2rem;
+  color: #724060;
+  list-style: square;
+  padding: 0;
+}
+
+.oraciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.oracion p {
+  font-size: 1.2rem;
+  color: #724060;
+}
+
+.instrucciones p {
+  margin: 10px 0px;
+}
+
+.instrucciones ul {
+  list-style: decimal;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 0.95rem;
+  color: rgba(253, 243, 243, 0.3);
+}
+
+footer a {
+  color: rgba(253, 243, 243, 0.5);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    max-width: 100%;
+  }
+  #maria1 {
+    width: 50%;
+    left: -40px;
+    opacity: 0.65;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+  }
+  .back-button,
+  .resource-button {
+    font-size: 0.85rem;
+  }
+
+  .describe-container {
+    font-size: 1.2rem;
+    padding: 0px 10px;
+  }
+
+  .first-content {
+    padding: 0px 10px;
+    font-size: 1.1rem;
+  }
+
+  .lista-grid ul {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1rem;
+    gap: 5px;
+  }
+
+  .oraciones-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .oracion p {
+    font-size: 1rem;
+    margin: 10px 0px;
+  }
+
+  .instrucciones {
+    padding-right: 5px;
+  }
+
+  .instrucciones ul {
+    padding-left: 15px;
+  }
+}

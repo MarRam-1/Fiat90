@@ -18,322 +18,493 @@
     />
   </head>
   <body>
+    <div class="logo-titulo">
+      <img src="media/Maria1.png" alt="Maria1" class="logo" />
+      <a href="index.html" class="titulo-link">
+        <h1 class="titulo">Fiat90</h1>
+      </a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
     <div class="main-container">
-      <a href="index.html" class="h1">Fiat90</a>
-      <h2>
-        Edición 2026 |
-        <span class="material-symbols-outlined">map_pin_heart</span>Guadalajara,
-        Jalisco
-      </h2>
-      <h3>
-        90 días de fe, humildad y entrega, siguiendo el ejemplo del ‘sí’ de
-        María a Dios.
-      </h3>
-      <h4>Vamos paso a paso</h4>
-      <div class="paso-a-paso-container-wrapper">
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>
-              <span class="material-symbols-outlined"> book_ribbon </span> El
-              programa consiste en
-            </summary>
-            <div>
-              dejar más espacio a Dios y crecer en oración, virtudes y
-              comunidad. No se trata de llenar tu agenda, sino de crear hábitos
-              que te acerquen a Él.
-              <ul>
-                <li>
-                  <strong>Vida cotidiana:</strong> Prácticas que reducen
-                  distracciones, fomentan virtudes como humildad y desapego, y
-                  abren un espacio para Dios en tu día a día.
-                </li>
-                <li>
-                  <strong>Cuerpo y hábitos:</strong> Fortalecen la
-                  autodisciplina y recuerdan que tu cuerpo es templo del
-                  Espíritu.
-                </li>
-                <li>
-                  <strong>Espiritualidad diaria:</strong>
-                  Lleva tu mente y tu corazón a la presencia de Dios,
-                  construyendo una base sólida para tu transformación interior.
-                </li>
-              </ul>
-              Todo se vive en <strong>comunidad</strong>: un grupo general para
-              avisos y recordatorios y <strong>subgrupos íntimos</strong> de 4 a
-              6 mujeres, donde podrás
-              <strong>conectar, compartir y motivarte</strong>
-              junto a tus compañeras de viaje.
-              <br />
-              <br />
-              Además, cada participante elige un “ancla”, un guía espiritual que
-              acompañará, motivará y ayudará a mantener el compromiso durante
-              todo el camino.
-              <br />
-              <br />
-              <em
-                >Cada mujer <strong>adapta el viaje</strong> a su ritmo y
-                situación, haciendo que esta experiencia sea única, cercana y
-                profundamente transformadora.</em
-              >
+      <div class="more-info-wrap">
+        <a href="empieza.html" class="more-info-card1">
+          <img src="media/menu1.png" alt="img-menu1" class="img-menu" />
+          Conceptos básicos
+        </a>
+        <a href="paso a paso.html" class="more-info-card2">
+          <img src="media/menu2.png" alt="img-menu2" class="img-menu" />
+          Paso a paso
+        </a>
+        <a href="Esquemas.html" class="more-info-card3">
+          <img src="media/menu3.png" alt="img-menu3" class="img-menu" />
+          Esquemas
+        </a>
+        <a href="reuniones.html" class="more-info-card1">
+          <img src="media/menu7.png" alt="img-menu7" class="img-menu" />
+          Reuniones
+        </a>
+      </div>
+
+      <div class="second-container">
+        <h4>Todo lo que debes tener claro antes de iniciar</h4>
+        <div class="bloques-info-wrap">
+          <div class="bloques-info">
+            <h5>
+              <span class="material-symbols-outlined"> calendar_month </span>
+              Fechas
+            </h5>
+            <span class="material-symbols-outlined"> play_arrow </span>
+            Iniciamos el lunes 5 de enero del <strong>2026</strong>. <br />
+            <span class="material-symbols-outlined"> check </span>
+            Terminamos el Domingo de Resurección, 5 de abril del 2026.
+          </div>
+
+          <div class="bloques-info">
+            <h5>
+              <span class="material-symbols-outlined"> timer </span> Empezamos
+              en
+            </h5>
+            <div class="countdown-container">
+              <div class="time-unit">
+                <span id="days">00</span>
+                <p>Días</p>
+              </div>
+              <div class="time-unit">
+                <span id="hours">00</span>
+                <p>Horas</p>
+              </div>
+              <div class="time-unit">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+              </div>
             </div>
-          </details>
+            <div id="finished-message" style="display: none">
+              ¡Fiat90 ya empezó!
+            </div>
+          </div>
+
+          <div class="bloques-info">
+            <h5>
+              <span class="material-symbols-outlined"> map_pin_heart </span>
+              Ubicación
+            </h5>
+            Dentro de la Zona Metropolitana de Guadalajara.
+            <img
+              src="media/guadalajara.png"
+              alt="guadalajara-img"
+              class="img-gdl"
+            />
+          </div>
+        </div>
+        <h5>Definiciones</h5>
+        <div class="paso-a-paso-container-wrapper">
+          <div class="paso-a-paso-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined"> anchor </span> Tu
+                ancla: tu guía espiritual
+              </summary>
+              <div>
+                Es el equivalente a un asesor o
+                <strong>director espiritual católico</strong>. Es alguien con
+                experiencia en la fe que te acompaña para profundizar tu
+                relación con Dios, discernir su voluntad y crecer en santidad.
+                <br />
+                <br />
+                <img src="media/ancla.png" alt="ancla-img" class="img-def" />
+                <h5>Qué hace tu ancla:</h5>
+
+                <ul>
+                  <li>
+                    <strong>Guía tu oración:</strong> te ayuda a descubrir
+                    formas de oración y a escuchar la voz de Dios.
+                  </li>
+                  <li>
+                    <strong>Fomenta el discernimiento:</strong>
+                    te acompaña en decisiones importantes y en tu vocación.
+                  </li>
+                  <li>
+                    <strong>Acompaña tu crecimiento:</strong>
+                    orienta tu vida interior y desarrollo de virtudes.
+                  </li>
+                  <li>
+                    <strong>Escucha y discierne:</strong>
+                    te ayuda a reconocer la acción de Dios en tu vida.
+                  </li>
+                  <li>
+                    <strong>Ofrece ánimo y responsabilidad:</strong>
+                    motiva y sostiene tu compromiso hasta completar el programa.
+                  </li>
+                </ul>
+                <h5>Quién puede ser tu ancla:</h5>
+                <ul>
+                  <li>Sacerdotes o diáconos.</li>
+                  <li>Personas consagradas.</li>
+                  <li>
+                    Personas maduras en la fe, con formación y experiencia, que
+                    sean modelos de vida cristiana.
+                  </li>
+                </ul>
+                Si aún no conoces a alguien así, puedes acercarte a tu parroquia
+                o comunidad para encontrar a tu ancla.
+                <em>
+                  <strong>Elegir bien a tu ancla es un paso clave</strong> para
+                  crecer en la fe y vivir este viaje de manera
+                  transformadora.</em
+                >
+              </div>
+            </details>
+          </div>
+
+          <div class="paso-a-paso-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined"> diversity_3 </span> En
+                comunidad
+              </summary>
+              <div>
+                <h5>Comunidad General</h5>
+                Somos todas las que vivimos esta experiencia. Tendremos
+                <strong>tres reuniones</strong> grupales:
+                <img
+                  src="media/general.png"
+                  alt="general-img"
+                  class="img-def"
+                />
+                <ul>
+                  <li>
+                    <strong>Primera reunión</strong> <em>(virtual)</em>: antes
+                    de iniciar, para explicar el programa y resolver dudas.
+                  </li>
+                  <li>
+                    <strong>Segunda reunión</strong>
+                    <em>(alrededor del día 45)</em>: para revisar avances,
+                    aclarar dudas y motivarnos a seguir.
+                  </li>
+                  <li>
+                    <strong>Tercera reunión</strong> <em>(al terminar)</em>:
+                    para celebrar y compartir experiencias y logros.
+                  </li>
+                </ul>
+                El grupo general de WhatsApp será nuestro
+                <strong>punto de encuentro común</strong>
+                durante todo el programa donde podrás:
+                <ul>
+                  <li>
+                    Recibir actualizaciones oficiales sobre reuniones y
+                    actividades.
+                  </li>
+                  <li>Recordar fechas importantes y momentos clave.</li>
+                  <li>Mantenerte conectada con toda la comunidad.</li>
+                </ul>
+                <em
+                  >Este chat se usa solo para información general y anuncios.
+                  Para dudas, acompañamiento o compartir tu experiencia, tu
+                  subgrupo será tu espacio principal.</em
+                >
+              </div>
+            </details>
+          </div>
+
+          <div class="paso-a-paso-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined"> diversity_1 </span>
+                Subgrupos: tu círculo íntimo
+              </summary>
+              <div>
+                Pequeños grupos de <strong>4 a 6 mujeres</strong> que serán tus
+                compañeras más cercanas durante este viaje. Aquí es donde
+                realmente
+                <strong>compartirás, crecerás y encontrarás apoyo diario</strong
+                >.
+                <br />
+                <br />
+                <h5>¿Cómo se forman?</h5>
+                Al dar click en PARTICIPAR CON NOSOTRAS, llenarás un
+                <strong>formulario breve</strong> para asignarte a un grupo con
+                mujeres afines a ti. <br /><br />
+                <img src="media/subgrupo.png" alt="sub-img" class="img-def" />
+                <h5>¿Cómo se vive un subgrupo?</h5>
+                <ul>
+                  <li>
+                    <strong>Contacto diario</strong> para apoyo y motivación.
+                  </li>
+                  <li>
+                    <strong>Reunión presencial</strong>: ustedes eligen día,
+                    hora, formato y frecuencia,
+                    <em>lo recomendado es semanalmente</em>.
+                  </li>
+                </ul>
+                Cada grupo decide su estilo:
+                <ul>
+                  <li>Caminata al aire libre y reflexión.</li>
+                  <li>Café y conversación profunda.</li>
+                  <li>Encuentro para visitar al Santísimo.</li>
+                  <li>O cualquier dinámica que nutra su fe y amistad.</li>
+                </ul>
+                <h5>¿Para qué sirven estas reuniones?</h5>
+                Son un espacio para:
+                <ul>
+                  <li>
+                    <strong>Reconocer la presencia de Dios</strong> en tu
+                    semana.
+                  </li>
+                  <li>Compartir luchas y gracias.</li>
+                  <li>Detenerte, respirar y abrir el corazón.</li>
+                  <li>Vivirlo acompañada por hermanas en la fe.</li>
+                </ul>
+                Estas reuniones se vuelven
+                <strong>lo mejor de tu semana</strong>.
+                <br />
+                Dios nos hizo para vivir en comunidad y estas mujeres serán tu
+                <strong>tribu espiritual</strong> durante 90 días.
+              </div>
+            </details>
+          </div>
         </div>
 
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>
-              <span class="material-symbols-outlined"> anchor </span> Tu ancla:
-              tu guía espiritual
-            </summary>
-            <div>
-              Es el equivalente a un asesor o
-              <strong>director espiritual católico</strong>. Es alguien con
-              experiencia en la fe que te acompaña para profundizar tu relación
-              con Dios, discernir su voluntad y crecer en santidad.
-              <br />
-              <br />
-              <h5>Qué hace tu ancla:</h5>
+        <div class="disciplinas-content">
+          <h5>Disciplinas: tu <em>‘sí’</em> a Dios</h5>
 
-              <ul>
-                <li>
-                  <strong>Guía tu oración:</strong> Te ayuda a descubrir y
-                  practicar formas de oración y a escuchar la voz de Dios.
-                </li>
-                <li>
-                  <strong>Fomenta el discernimiento:</strong>
-                  Te acompaña en decisiones importantes y en el descubrimiento
-                  de tu vocación, ayudándote a reconocer la voluntad de Dios.
-                </li>
-                <li>
-                  <strong>Acompaña tu crecimiento:</strong>
-                  Te orienta en tu vida interior, madurez espiritual y
-                  desarrollo de virtudes.
-                </li>
-                <li>
-                  <strong>Escucha y discierne:</strong>
-                  Reflexiona sobre tu historia y la acción del Espíritu, para
-                  ayudarte a reconocer la gracia de Dios.
-                </li>
-                <li>
-                  <strong>Ofrece ánimo y responsabilidad:</strong>
-                  Te motiva y te ayuda a mantenerte comprometida hasta completar
-                  tu camino.
-                </li>
-              </ul>
-              <h5>Quién puede ser tu ancla:</h5>
-              <ul>
-                <li>Sacerdotes o diáconos.</li>
-                <li>Personas consagradas.</li>
-                <li>
-                  Personas maduras en la fe, con formación y experiencia, que
-                  sean modelos de vida cristiana.
-                </li>
-              </ul>
-              <strong>¿Conoces a alguien así?</strong> Si no, te invitamos a
-              acercarte a tu parroquia o a tu comunidad de fe para encontrar a
-              quien pueda acompañarte como ancla.
-              <br />
-              <br />
-              Durante este programa,
-              <strong>tu ancla será tu referente espiritual</strong>, con quien
-              deberás tener <strong>contacto frecuente</strong>, para recibir
-              guía, oración, motivación y apoyo para cumplir tu compromiso.
-              <em
-                >Elegir a tu ancla es un paso clave para crecer en la fe y vivir
-                este viaje de manera transformadora.</em
-              >
-            </div>
-          </details>
+          FIAT90 no busca llenarte de actividades, sino de discernir los
+          cambios, hábitos o sacrificios diarios que te ayudan a
+          <strong>escuchar a Dios</strong>
+          y decirle tu “sí” cada día.
+          <img
+            src="media/disciplina.png"
+            alt="disciplina-img"
+            class="img-def"
+          />
+          <br /><br />
+          <strong>No hay una forma perfecta de vivirlas:</strong> ada mujer
+          adapta su camino según su vida, responsabilidades y situación. Lo
+          importante es vivirlas con gracia y perseverancia.. <br /><br />
+          <strong>Consejos para elegir tus disciplinas:</strong>
+          <ul>
+            <li>
+              <strong>Ora y discierne</strong> cuáles estás llamada a vivir.
+            </li>
+            <li>Adáptalas según tu vida diarias.</li>
+            <li>
+              No busques perfección, sino un corazón dispuesto a decir “sí”.
+            </li>
+          </ul>
+          Habrá días difíciles y tropiezos, y eso es normal. Cada desafío es una
+          oportunidad para
+          <strong
+            >crecer en humildad, depender de Dios y renovarte en tu
+            camino</strong
+          >.
         </div>
 
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>
-              <span class="material-symbols-outlined"> diversity_3 </span> En
-              comunidad
-            </summary>
-            <div>
-              <h5>Comunidad General</h5>
-              Somos todas las que vivimos esta experiencia. Tendremos
-              <strong>tres reuniones</strong> grupales, pensadas para
-              acompañarte en cada etapa del camino:
-              <ul>
-                <li>
-                  <strong>Primera reunión</strong> <em>(virtual)</em>: Antes de
-                  iniciar, para explicar el programa a detalle, resolver dudas y
-                  ubicarnos en este viaje.
-                </li>
-                <li>
-                  <strong>Segunda reunión</strong>
-                  <em>(alrededor del día 45)</em>: Para resolver dudas, revisar
-                  la segunda parte del programa y motivarnos a seguir avanzando.
-                </li>
-                <li>
-                  <strong>Tercera reunión</strong> <em>(al terminar)</em>: Para
-                  celebrar y compartir las experiencias y logros de este camino
-                  espiritual.
-                </li>
-              </ul>
-              El grupo general de WhatsApp será nuestro
-              <strong>punto de encuentro común</strong>
-              durante todo el programa. Es el espacio donde todas las
-              participantes permanecemos conectadas como una sola comunidad.
-              <br />
-              Aquí podrás:
-              <ul>
-                <li>
-                  <strong>Recibir actualizaciones oficiales</strong> sobre
-                  reuniones y actividades.
-                </li>
-                <li>
-                  <strong>Recordar fechas importantes</strong> y momentos clave
-                  del programa.
-                </li>
-                <li>
-                  Mantenerte unida a toda la comunidad, aun cuando tu subgrupo
-                  tenga un espacio más íntimo y personal.
-                </li>
-              </ul>
-              <em
-                >Este chat se usa solo para información general y anuncios, para
-                mantenerlo claro y ordenado. Para dudas, acompañamiento o
-                compartir tu experiencia, tu mejor espacio será siempre tu
-                subgrupo.</em
-              >
-            </div>
-          </details>
-        </div>
+        <div class="disciplinas-container-wrapper">
+          <div class="disciplinas-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined"> mindfulness </span>
+                Disciplinas Estilo de Vida
+              </summary>
+              <div>
+                Ayudan a
+                <strong>reducir distracciones y fortalecer virtudes</strong>
+                como humildad y desapego.
+                <ul>
+                  <li>
+                    No chismear: el chisme genera separación y discordia,
+                    incluso disfrazado de conversación inocente.
+                  </li>
+                  <li>Aumentar mi agradecimiento y eliminar la queja.</li>
+                  <li>
+                    Limitar la TV y las películas: solo verlas con otros y por
+                    un propósito específico.
+                  </li>
+                  <li>
+                    Reducir el consumo de música, podcasts y medios seculares.
+                  </li>
+                  <li>No usar el teléfono después de las 9:00 p.m.</li>
+                  <li>Abstenerme de redes sociales: solo usar para trabajo.</li>
+                  <li>
+                    Evitar compras innecesarias como sacrificio y acto de
+                    desapego.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+          <div class="disciplinas-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined">
+                  sports_gymnastics
+                </span>
+                Disciplinas Físicas
+              </summary>
+              <div>
+                Cuidar el cuerpo y los hábitos
+                <strong>fortalecen la autodisciplina y el autocontrol</strong>,
+                recordándote que tu cuerpo es templo del Espíritu.
+                <ul>
+                  <li>
+                    Ayunar <em>(adaptado según necesidades de salud)</em>.
+                  </li>
+                  <li>Abstenerme de dulces, alcohol, postres y snacks.</li>
+                  <li>Levantarme al primer sonido de la alarma cada mañana.</li>
+                  <li>
+                    Realizar ejercicio o actividad física 3-5 veces por semana.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
 
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>
-              <span class="material-symbols-outlined"> diversity_1 </span>
-              Subgrupos: tu círculo íntimo
-            </summary>
-            <div>
-              Pequeños grupos de <strong>4 a 6 mujeres</strong> que serán tus
-              compañeras más cercanas durante este viaje. Aquí es donde
-              realmente
-              <strong>compartirás, crecerás y encontrarás apoyo diario</strong>.
-              <br />
-              <br />
-              <h5>¿Cómo se forman?</h5>
-              Llenarás un <strong>formulario breve</strong> para asignarte a un
-              grupo con mujeres afines a ti.
-              <ul>
-                <li>
-                  Si ya estás lista para participar →
-                  <a href="">haz clic para llenar el formulario.</a>
-                </li>
-                <li>
-                  Si quieres leer primero toda la información → lo encontrarás
-                  más adelante.
-                </li>
-                <li>
-                  ¿Ya tienes tu propio grupo? ¡Perfecto! Pueden participar
-                  juntas sin problema.
-                </li>
-              </ul>
-              <h5>¿Cómo se vive un subgrupo?</h5>
-              <ul>
-                <li>
-                  <strong>Contacto diario</strong> para apoyo y motivación.
-                </li>
-                <li>
-                  <strong>Reunión presencial</strong>, ustedes eligen día, hora,
-                  formato y frecuencia, <em>lo recomendado es semanalmente</em>.
-                </li>
-              </ul>
-              Cada grupo decide su estilo:
-              <ul>
-                <li>Caminata al aire libre y reflexión.</li>
-                <li>Café y conversación profunda.</li>
-                <li>Encuentro para visitar al Santísimo.</li>
-                <li>O cualquier dinámica que nutra su fe y amistad.</li>
-              </ul>
-              <h5>¿Para qué sirven estas reuniones?</h5>
-              Son un espacio para:
-              <ul>
-                <li>
-                  <strong>Reconocer la presencia de Dios</strong> en tu semana.
-                </li>
-                <li>Compartir luchas y gracias.</li>
-                <li>Detenerte, respirar y abrir el corazón.</li>
-                <li>Vivirlo acompañada por hermanas en la fe.</li>
-              </ul>
-              Estas reuniones se vuelven <strong>lo mejor de tu semana</strong>.
-              <br />
-              Dios nos hizo para vivir en comunidad y estas mujeres serán tu
-              <strong>tribu espiritual</strong> durante 90 días.
-              <br />
-              <br />
-              <h5>
-                <span class="material-symbols-outlined"> explore </span> Guía
-                sencilla para cada reunión
-              </h5>
-              <strong>Luz:</strong> Algo bueno de tu semana.
-              <br />
-              <strong>Sombra:</strong> Una lucha o dificultad.
-              <br />
-              <strong>Momento del Espíritu Santo:</strong> Un instante donde
-              sentiste Su presencia.
-              <br />
-              <strong>Intención:</strong> En qué necesitas apoyo de Dios y de
-              tus hermanas.
-              <br />
-              <strong>Oración final:</strong>
-              Una oración unas por otras (Ave María, oración espontánea,
-              Rosario, etc.).
-            </div>
-          </details>
+          <div class="disciplinas-container">
+            <details>
+              <summary>
+                <span class="material-symbols-outlined"> relax </span>
+                Disciplinas Espirituales
+              </summary>
+              <div>
+                Crean una base sólida para el
+                <strong
+                  >crecimiento espiritual y la transformación personal</strong
+                >.
+                <ul>
+                  <li>
+                    Adopción espiritual: oracion ofrecida por una persona.
+                  </li>
+                  <li>Novena del Rosario de 54 días.</li>
+                  <li>
+                    Consagración Mariana según San Luis de Montfort o el
+                    programa de 33 días.
+                  </li>
+                  <li>Misa diaria.</li>
+                  <li>Hacer examen de conciencia cada noche.</li>
+                  <li>Oraciones individuales.</li>
+                  <li>Confesión quincenal o mensual.</li>
+                  <li>
+                    Lectura bíblica diaria según el esquema proporcionado.
+                  </li>
+                  <li>
+                    Adoración Eucarística semanal.
+                    <em
+                      >Puede ser en casa, una hora de silencio con el Señor.</em
+                    >
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
         </div>
+        <a href="participa.html" class="participa-button">
+          ¡Quiero participar!
+          <span class="material-symbols-outlined">
+            keyboard_double_arrow_right
+          </span></a
+        >
+      </div>
 
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>Disciplinas: tu <em>‘sí’</em> a Dios</summary>
-            <div>
-              FIAT90 no busca llenarte de actividades, se trata de
-              <strong>discernir</strong> qué cambios, sacrificios o hábitos
-              diarios te ayudarán a crear espacio para escuchar mejor Su voz y a
-              decir tu “sí” a Él cada día.
-              <br />
-              <br />
-              <strong>No hay una forma perfecta de vivirlas.</strong> Cada mujer
-              tiene un llamado distinto. Por ejemplo, será distinto para una
-              mamá, alguien con restricciones de salud o alguien con mucho
-              trabajo. Lo importante es elegir lo que puedes vivir con gracia y
-              perseverancia.
-              <h5>Consejos para elegir tus disciplinas:</h5>
-              <ul>
-                <li>
-                  <strong>Ora y discierne</strong> qué disciplinas vivirás.
-                </li>
-                <li>Adáptalas según tu vida diaria y responsabilidades.</li>
-                <li>
-                  Recuerda: no busques la perfección, sino el corazón dispuesto
-                  a decir “sí” cada día.
-                </li>
-              </ul>
-              Las disciplinas <strong>son un desafío</strong>, y habrá días
-              difíciles. Habrá momentos en que no las cumplas como esperabas, y
-              eso está bien.
-              <em
-                >Cada tropiezo es una oportunidad para crecer en humildad,
-                depender más de Dios y volver a levantarte con un corazón
-                renovado.</em
-              >
+      <div class="third-container">
+        <div class="preguntas-frecuentes">
+          <div class="que-es-container">
+            <span class="material-symbols-outlined"> help </span> Preguntas
+            Frecuentes
+          </div>
+          <div class="preguntas-frecuentes-wrapper">
+            <div class="preguntas-container">
+              <details>
+                <summary>¿Puedo iniciarlo en otra fecha?</summary>
+                <p>
+                  Este programa lo puedes vivir cuando tu quieras, nosotras lo
+                  haremos en las fechas señaladas.
+                </p>
+              </details>
             </div>
-          </details>
-        </div>
 
-        <div class="paso-a-paso-container">
-          <details>
-            <summary>Disciplinas: Estilo de Vida</summary>
-            <div>FIAT90 no busca</div>
-          </details>
+            <div class="preguntas-container">
+              <details>
+                <summary>¿Puedo hacerlo si no vivo en la ZMG?</summary>
+                <p>
+                  Claro. Si estás fuera de la ZMG, crea un pequeño grupo local
+                  para compartir el camino.
+                </p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>¿Puedo cambiar de Ancla en los 90 días?</summary>
+                <p>
+                  Sí, puedes cambiar de ancla si sientes que no estás recibiendo
+                  el acompañamiento necesario. <br />
+                  Busca a alguien que realmente cumpla con las características y
+                  pueda guiarte en el camino.
+                </p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>
+                  ¿Qué pasa si no puedo asistir a alguna de las reuniones
+                  generales?
+                </summary>
+                <p>Mantén tu compromiso personal. Cada pequeño ‘sí’ cuenta.</p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>¿Puedo elegir mi propio subgrupo?</summary>
+                <p>
+                  Sí. Elige mujeres con quienes puedas crecer, compartir y
+                  perseverar.
+                </p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>¿Qué pasa si no estoy cómoda en mi subgrupo?</summary>
+                <p>
+                  Si no te acomoda, es válido cambiar de subgrupo. Solo recuerda
+                  que estos no pueden ser mayores a 6 mujeres.
+                </p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>
+                  ¿Qué pasa si no puedo ir a las reuniones de mi subgrupo?
+                </summary>
+                <p>
+                  Tu compromiso individual sostiene al colectivo. Si no puedes
+                  asistir, permanece fiel en oración y prácticas; tu ‘sí’ a Dios
+                  continúa transformando.
+                </p>
+              </details>
+            </div>
+
+            <div class="preguntas-container">
+              <details>
+                <summary>
+                  ¿Que pasa si parte de mi trabajo es con redes sociales?
+                </summary>
+                <p>
+                  Las disciplinas son flexibles. Lo esencial es que te permitan
+                  dedicar momentos conscientes a Dios, incluso si tu trabajo
+                  requiere estar en línea.
+                </p>
+              </details>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <footer>
       Coded by
       <a href="https://www.linkedin.com/in/mariana-ramirez-psicologa/"
@@ -341,5 +512,21 @@
       >
     </footer>
     <script src="src/empieza.js"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".more-info-wrap").classList.toggle("open");
+      }
+
+      // Cerrar menú si clicas fuera de él
+      document.addEventListener("click", (e) => {
+        const menu = document.querySelector(".more-info-wrap");
+        const button = document.querySelector(".menu-btn");
+
+        // Si haces clic fuera del menú y no es el botón
+        if (!menu.contains(e.target) && e.target !== button) {
+          menu.classList.remove("open");
+        }
+      });
+    </script>
   </body>
 </html>
