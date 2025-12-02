@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/paso.css" />
     <link
       rel="stylesheet"
@@ -36,15 +37,16 @@
           <img src="media/menu2.png" alt="img-menu2" class="img-menu" />
           Paso a paso
         </a>
-        <a href="Esquemas.html" class="more-info-card3">
-          <img src="media/menu3.png" alt="img-menu3" class="img-menu" />
+        <a href="Esquemas.html" class="more-info-card1">
+          <img src="media/esquema-log.png" alt="img-menu3" class="img-menu" />
           Esquemas
         </a>
-        <a href="reuniones.html" class="more-info-card1">
+        <a href="reuniones.html" class="more-info-card2">
           <img src="media/menu7.png" alt="img-menu7" class="img-menu" />
-          Reuniones
+          Reuniones y recursos
         </a>
       </div>
+
       <div class="second-container">
         <h4>Vamos paso a paso</h4>
         <div class="paso-a-paso-wrapper">
@@ -205,7 +207,9 @@
     </div>
     <footer>
       Coded by
-      <a href="https://www.linkedin.com/in/mariana-ramirez-psicologa/"
+      <a
+        href="https://www.linkedin.com/in/mariana-ramirez-psicologa/"
+        target="_blank"
         >Mariana Ramirez</a
       >
     </footer>
@@ -214,12 +218,10 @@
         document.querySelector(".more-info-wrap").classList.toggle("open");
       }
 
-      // Cerrar menú si clicas fuera de él
       document.addEventListener("click", (e) => {
         const menu = document.querySelector(".more-info-wrap");
         const button = document.querySelector(".menu-btn");
 
-        // Si haces clic fuera del menú y no es el botón
         if (!menu.contains(e.target) && e.target !== button) {
           menu.classList.remove("open");
         }
@@ -228,9 +230,9 @@
       window.addEventListener("pageshow", function (event) {
         const menu = document.querySelector(".more-info-wrap");
 
-        // Siempre cerrar el menú al cargar o al volver con "back"
         menu.classList.remove("open");
       });
     </script>
+    <script src="src/swipe.js"></script>
   </body>
 </html>
