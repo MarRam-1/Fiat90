@@ -18,6 +18,20 @@
     />
   </head>
   <body>
+    <canvas
+      id="confetti"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 58474865458;
+      "
+    ></canvas>
+    <canvas id="stars"></canvas>
+
     <div class="main-container">
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
       <div class="first-container">
@@ -56,6 +70,140 @@
       </div>
 
       <div class="second-container">
+        <div class="fiat-activo">
+          <div class="today-info-container">
+            <div class="date today-card">
+              <div class="today">Lunes 5 de enero</div>
+              <div class="frase"><em>“Hoy comienza con decisión.”</em></div>
+            </div>
+
+            <div class="lectura today-card">
+              <span class="material-symbols-outlined"> book_2 </span>
+              <span class="lectura-hoy" id="lectura-text">Génesis 2, 4-25</span>
+              <div class="lecturas-button-container">
+                <button
+                  class="lecturas-button lectura-active"
+                  data-tipo="mujeres"
+                >
+                  <span class="material-symbols-outlined"> woman_2 </span>
+                </button>
+                <button class="lecturas-button" data-tipo="evangelios">
+                  <span class="material-symbols-outlined">
+                    bookmark_heart
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="recordatorios today-card">
+              <span class="material-symbols-outlined"> keep </span>
+              Diario:
+              <div class="buttons-reminders">
+                <div class="diario-button">
+                  <a href="oraciones.html" target="_blank"
+                    ><span class="material-symbols-outlined">
+                      cardiology
+                    </span></a
+                  >
+                </div>
+                <div class="diario-button">
+                  <a href="empieza.html#ancla" target="_blank"
+                    ><span class="material-symbols-outlined"> anchor </span></a
+                  >
+                </div>
+                <div class="diario-button">
+                  <a href="reuniones.html" target="_blank"
+                    ><span class="material-symbols-outlined"> group </span></a
+                  >
+                </div>
+                <div class="diario-button">
+                  <a href="examen.html" target="_blank"
+                    ><span class="material-symbols-outlined">
+                      moon_stars
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="rosario-consagracion today-card">
+              <span class="material-symbols-outlined"> fertile </span>
+              <span id="hoy-oramos"
+                >Rosario con petición: <br />
+                <em
+                  >"Oh Reina Santa, dispensadora de las gracias de Dios, recibe
+                  mi humilde petición y concédeme la gracia que humildemente
+                  busco. Amén."</em
+                ></span
+              >
+              <div class="rosario-consagracion-button">
+                <a
+                  href="https://open.spotify.com/show/1FrPINSqACfF47qlxMHbaG?si=d178e5c55c8a42d7&nd=1&dlsi=b17f405c09bd467b"
+                  class="spotify-con-ros"
+                  target="_blank"
+                  ><span class="material-symbols-outlined">
+                    graphic_eq
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="disciplinas-card">
+            <input type="radio" name="disciplinas-slider" id="d1" checked />
+            <input type="radio" name="disciplinas-slider" id="d2" />
+            <input type="radio" name="disciplinas-slider" id="d3" />
+            <input type="radio" name="disciplinas-slider" id="d4" />
+
+            <div class="disciplinas-slider-cards">
+              <label class="disciplina-card card1" for="d1">
+                <h3>¿Cómo vas con tus disciplinas?</h3>
+                <ul>
+                  <li>Adopción espiritual</li>
+                  <li>Examen de conciencia</li>
+                  <li>Lectura bíblica</li>
+                  <li>Rosario 54 días</li>
+                  <li>Consagración a María</li>
+                </ul>
+                1
+              </label>
+              <label class="disciplina-card card2" for="d2">
+                <h3>¿Cómo vas con tus disciplinas?</h3>
+                <ul>
+                  <li>Aumentar mi agradecimiento</li>
+                  <li>Adoración eucarística</li>
+                  <li>Eliminar el chisme</li>
+                  <li>Evitar compras innecesarias</li>
+                  <li>Actividad física</li>
+                </ul>
+                2
+              </label>
+              <label class="disciplina-card card3" for="d3">
+                <h3>¿Cómo vas con tus disciplinas?</h3>
+                <ul>
+                  <li>Oración individual</li>
+                  <li>Confesión mensual</li>
+                  <li>No dulces, alcohol, postres ni snacks</li>
+                  <li>Limitar la TV</li>
+                  <li>Reducir entretenimiento secular</li>
+                </ul>
+                3
+              </label>
+              <label class="disciplina-card card4" for="d4">
+                <h3>¿Cómo vas con tus disciplinas?</h3>
+                <ul>
+                  <li>Evitar teléfono después de las 9</li>
+                  <li>Levantarme con mi alarma</li>
+                  <li>Abstenerme de redes sociales</li>
+                  <li>Ayunar</li>
+                  <li>Misa diaria</li>
+                </ul>
+                4
+              </label>
+            </div>
+          </div>
+        </div>
+
         <div class="que-es-container">
           Ejercicios espirituales que, inspirados en la Virgen María, te guían
           hacia una transformación.

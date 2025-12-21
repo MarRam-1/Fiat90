@@ -51,6 +51,11 @@ h1 {
   position: relative;
   z-index: 5;
   text-align: center;
+  text-decoration: none;
+}
+
+.head-container a {
+  text-decoration: none;
 }
 
 h2 {
