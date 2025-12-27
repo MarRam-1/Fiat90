@@ -361,6 +361,7 @@ label .material-symbols-outlined {
   gap: 5px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  display: none;
 }
 
 .wa-button:hover {
