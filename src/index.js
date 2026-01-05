@@ -57,9 +57,11 @@ function updateDailyContent() {
   // --- FECHA Y DÍA ---
   let today = document.querySelector(".today");
   let now = new Date();
+  now.setHours(0, 0, 0, 0);
   let date = now.getDate();
 
   let startDate = new Date("2026-01-05"); // <-- cambia esto a tu fecha de inicio real
+  startDate.setHours(0, 0, 0, 0);
   let endDate = new Date("2026-04-05");
 
   let diffTime = now - startDate; // diferencia en milisegundos
